@@ -2,6 +2,7 @@ module.exports = {
     "env": {
         "browser": true,
         "commonjs": true,
+        "amd": true,
         "es6": true
     },
     "extends": ["eslint:recommended","plugin:prettier/recommended"],
@@ -9,7 +10,10 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-        "prettier/prettier": "error",
+        "prettier/prettier": ["error", {
+            "singleQuote": true,
+            "tabWidth": 4
+        }],
         "no-console": "error"
     }
 };
