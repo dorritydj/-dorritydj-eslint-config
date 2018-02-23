@@ -12,7 +12,8 @@ module.exports = {
     "rules": {
         "prettier/prettier": ["error", {
             "singleQuote": true,
-            "tabWidth": 4
+            "tabWidth": 4,
+            "arrowParens": "always"
         }],
         "no-console": "error"
     }
